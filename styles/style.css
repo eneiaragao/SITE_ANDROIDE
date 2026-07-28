@@ -250,3 +250,13 @@ footer a:hover {
 
 
 /*RESPONSIVIDADE*/
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Coloca os links um abaixo do outro no celular */
+        text-align: center;
+    }
+    nav > a {
+        display: block;
+        padding: 8px;
+    }
+}
