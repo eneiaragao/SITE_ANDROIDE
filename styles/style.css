@@ -73,11 +73,13 @@ header > p {
     text-shadow: 2px 2px 0px black;
 }
 nav{
-    min-width: 150px;
+    
     background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.432);
     display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha no celular se a tela for estreita */
+    justify-content: center; /* Centraliza os itens no menu */
     
 }
 nav > a {
@@ -155,7 +157,8 @@ main img{
     width: 100%;
 }
 main img.pequena{
-    max-width:350%;
+    max-width:350px;
+    width: 100%;       /* Para caber perfeitamente em telas menores que 350px */
     display: block;
     margin: auto;
 }
